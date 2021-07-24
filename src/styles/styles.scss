@@ -1,0 +1,22 @@
+@use "./reset.scss";
+@import "./variables.scss";
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+button {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: $darkGray;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.247);
+  transition: 0.3s;
+}
+
+body {
+  font-family: sans-serif;
+}

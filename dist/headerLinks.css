@@ -1,0 +1,46 @@
+.headerLinks ul {
+  display: flex;
+  align-items: center;
+}
+
+.headerLinks ul li {
+  position: relative;
+  margin: 0 1vw;
+  transition: 0.3s;
+}
+
+.headerLinks ul li::before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #6c8367;
+  transition: 0.3s;
+}
+
+.headerLinks ul li::before a {
+  font-size: 18px;
+}
+
+.headerLinks ul li:hover a {
+  color: #6c8367;
+}
+
+.headerLinks ul li:hover::before {
+  width: 110%;
+}
+
+@media screen and (max-width: 768px) {
+  .headerLinks {
+    display: none;
+    margin-bottom: 2vh;
+  }
+  .headerLinks ul {
+    flex-direction: column;
+  }
+  .headerLinks ul li {
+    margin: 0.5vh 0;
+  }
+}

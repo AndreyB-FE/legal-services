@@ -1,0 +1,47 @@
+@import "../../styles/variables";
+
+.headerLinks {
+  ul {
+    display: flex;
+    align-items: center;
+    li {
+      position: relative;
+      margin: 0 1vw;
+      transition: 0.3s;
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background-color: $baseGreen;
+        transition: 0.3s;
+        a {
+          font-size: 18px;
+        }
+      }
+      &:hover {
+        a {
+          color: $baseGreen;
+        }
+        &::before {
+          width: 110%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .headerLinks {
+    display: none;
+    margin-bottom: 2vh;
+    ul {
+      flex-direction: column;
+      li {
+        margin: 0.5vh 0;
+      }
+    }
+  }
+}

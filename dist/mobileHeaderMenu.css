@@ -1,0 +1,32 @@
+.dropDown {
+  position: absolute;
+  top: 3.5rem;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 3vh 0;
+  background-color: #d6d6d6;
+  border-bottom: 2px solid #6c8367;
+  transition: 0.3s;
+  z-index: -1;
+}
+
+.dropDown .headerLinks {
+  display: block;
+}
+
+.dropDown .orderButton {
+  display: block;
+}
+
+.hideMenu {
+  left: -100%;
+}
+
+@media screen and (min-width: 768px) {
+  .dropDown {
+    display: none;
+  }
+}
