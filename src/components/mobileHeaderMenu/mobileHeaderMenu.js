@@ -6,7 +6,7 @@ import SocialIcons from "../socialIcons/socialIcons";
 
 const MobileHeaderMenu = (props) => {
   return (
-    <div className={`dropDown ${props.isOpen ? null : "hideMenu"}`}>
+    <div className={`dropDown${props.isOpen ? "" : " hideMenu"}`}>
       <HeaderLinks></HeaderLinks>
       <OrderButton></OrderButton>
       <SocialIcons></SocialIcons>

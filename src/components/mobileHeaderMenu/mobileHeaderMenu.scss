@@ -11,7 +11,7 @@
   padding: 3vh 0;
   background-color: $lightGray;
   border-bottom: 2px solid $baseGreen;
-  transition: 0.3s;
+  transition: 0.3s ease-out;
   z-index: -1;
   .headerLinks {
     display: block;

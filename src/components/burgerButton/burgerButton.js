@@ -5,7 +5,7 @@ const BurgerButton = (props) => {
   return (
     <div
       id="burgerButton"
-      className={`menu ${props.isOpen ? "cross" : null}`}
+      className={`menu${props.isOpen ? " cross" : ""}`}
       onClick={props.clickHandler}
     >
       <span></span>
