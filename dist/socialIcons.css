@@ -17,3 +17,9 @@
 .socialIcons .icon:last-of-type {
   margin: 0 0 0 1.5vw;
 }
+
+@media screen and (min-width: 768px) {
+  .socialIcons .icon:last-of-type {
+    margin-left: 0.75vw;
+  }
+}

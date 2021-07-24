@@ -8,6 +8,7 @@
 
 button {
   border: none;
+  cursor: pointer;
 }
 
 a {
@@ -19,4 +20,12 @@ a {
 
 body {
   font-family: sans-serif;
+  min-height: 100vh;
+}
+.container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  max-width: 1440px;
 }
