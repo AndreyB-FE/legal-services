@@ -1,0 +1,57 @@
+.contentBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #464646;
+  text-shadow: 0 0 2px rgba(128, 128, 128, 0.349);
+  max-width: 350px;
+  width: 90%;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.contentBlock .contentHeader {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.contentBlock .contentText {
+  font-family: "Montserrat", sans-serif;
+  color: #6c8367;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.contentBlock .learnMore {
+  font-size: 14px;
+  width: 150px;
+  height: 2.5rem;
+  background-color: #6c8367;
+  color: white;
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .contentBlock {
+    line-height: 23px;
+    padding: 4rem;
+    max-width: 535px;
+  }
+  .contentBlock .contentHeader {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 2rem 0;
+  }
+  .contentBlock .contentText {
+    font-size: 18px;
+    color: #6c8367;
+  }
+  .contentBlock .learnMore {
+    font-size: 18px;
+    width: 200px;
+    height: 4rem;
+    margin-top: 2rem;
+  }
+}

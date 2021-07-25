@@ -3,12 +3,14 @@ import "./logo.scss";
 
 const Logo = (props) => {
   return (
-    <img
-      className="logo"
-      alt="Benissimo"
-      src="./assets/logo.png"
-      style={{ width: props.width }}
-    ></img>
+    <div className="logoWrapper">
+      <img
+        className="logo"
+        alt="Benissimo"
+        src="./assets/logo.png"
+        style={{ width: props.width }}
+      ></img>
+    </div>
   );
 };
 

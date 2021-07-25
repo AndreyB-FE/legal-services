@@ -1,0 +1,56 @@
+@import "../../styles/variables";
+
+.contentBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $darkGray;
+  text-shadow: 0 0 2px rgba(128, 128, 128, 0.349);
+  max-width: 350px;
+  width: 90%;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  .contentHeader {
+    font-family: "Merriweather Sans", sans-serif; //test
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  .contentText {
+    font-family: "Montserrat", sans-serif; //test
+    color: $baseGreen;
+    font-size: 16px;
+    text-align: justify;
+  }
+  .learnMore {
+    font-size: 14px;
+    width: 150px;
+    height: 2.5rem;
+    background-color: $baseGreen;
+    color: white;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contentBlock {
+    line-height: 23px;
+    padding: 4rem;
+    max-width: 535px;
+    .contentHeader {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 0 0 2rem 0;
+    }
+    .contentText {
+      font-size: 18px;
+      color: $baseGreen;
+    }
+    .learnMore {
+      font-size: 18px;
+      width: 200px;
+      height: 4rem;
+      margin-top: 2rem;
+    }
+  }
+}
