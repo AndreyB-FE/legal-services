@@ -48,25 +48,47 @@ function SamplePrevArrow(props) {
 const SliderSection = () => {
   const slides = [
     {
-      imgSrc: "./assets/legal.jpg",
       style: {
         backgroundImage: 'url("./assets/legal.jpg")',
       },
-      className: "slide",
+      // warning!!! shit code
+      contentText: {
+        headerText: [
+          "Прозрачные услуги,",
+          " и так далее,",
+          " lorem ipsum xns.",
+        ],
+        mainText:
+          "Lorem Ipsum is simply dummy text of the printing and typesettingindustry. Lorem Ipsum has been the industry's standard dummy text eversince the 1500s, when an unknown printer took a galley of type andscrambled it to make a type specimen book.",
+      },
     },
     {
-      imgSrc: "./assets/legal.jpg",
       style: {
         backgroundImage: 'url("./assets/legal.jpg")',
       },
-      className: "slide",
+      contentText: {
+        headerText: [
+          "Прозрачные услуги,",
+          " и так далее,",
+          " lorem ipsum xns.",
+        ],
+        mainText:
+          "Lorem Ipsum is simply dummy text of the printing and typesettingindustry. Lorem Ipsum has been the industry's standard dummy text eversince the 1500s, when an unknown printer took a galley of type andscrambled it to make a type specimen book.",
+      },
     },
     {
-      imgSrc: "./assets/legal.jpg",
       style: {
         backgroundImage: 'url("./assets/legal.jpg")',
       },
-      className: "slide",
+      contentText: {
+        headerText: [
+          "Прозрачные услуги,",
+          " и так далее,",
+          " lorem ipsum xns.",
+        ],
+        mainText:
+          "Lorem Ipsum is simply dummy text of the printing and typesettingindustry. Lorem Ipsum has been the industry's standard dummy text eversince the 1500s, when an unknown printer took a galley of type andscrambled it to make a type specimen book.",
+      },
     },
   ];
 
@@ -92,10 +114,9 @@ const SliderSection = () => {
     <Slider {...settings}>
       {slides.map((slide, id) => {
         return (
-          <div key={id} className={slide.className} style={slide.style}>
-            {/* <img src={slide.imgSrc} alt="" /> */}
+          <div key={id} className="slide" style={slide.style}>
             <div className="slide-shadow">
-              <SlideContent></SlideContent>
+              <SlideContent {...slide.contentText}></SlideContent>
             </div>
           </div>
         );

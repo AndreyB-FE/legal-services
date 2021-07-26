@@ -1,0 +1,113 @@
+@import "../../styles/variables";
+
+.explain {
+  color: $darkGray;
+  text-align: justify;
+  max-width: 1280px;
+  padding: 1rem 1rem;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 5rem;
+  border: 3px 0 3px 0 solid $baseGreen;
+  border-top: 3px solid $baseGreen;
+  border-bottom: 3px solid $baseGreen;
+  h3,
+  p {
+    display: inline;
+  }
+  h3 {
+    display: inline;
+    font-family: "Merriweather Sans", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  p {
+    // overflow: hidden;
+    // text-overflow: ellipsis;
+    // display: -moz-box;
+    // -moz-box-orient: vertical;
+    // display: -webkit-box;
+    // -webkit-line-clamp: 5;
+    // -webkit-box-orient: vertical;
+    // line-clamp: 5;
+    // box-orient: vertical;
+    line-height: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+  }
+
+  .readMore {
+    color: $baseGreen;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+  }
+}
+
+.open {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  line-clamp: 4;
+  box-orient: vertical;
+}
+
+@media screen and (min-width: 768px) {
+  .explain {
+    padding: 1rem 0;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    border: 3px 0 3px 0 solid $baseGreen;
+    border-top: 3px solid $baseGreen;
+    border-bottom: 3px solid $baseGreen;
+    h3,
+    p {
+      display: inline;
+    }
+    h3 {
+      display: inline;
+      font-family: "Merriweather Sans", sans-serif;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    p {
+      // overflow: hidden;
+      // text-overflow: ellipsis;
+      // display: -moz-box;
+      // -moz-box-orient: vertical;
+      // display: -webkit-box;
+      // -webkit-line-clamp: 5;
+      // -webkit-box-orient: vertical;
+      // line-clamp: 5;
+      // box-orient: vertical;
+      line-height: 23px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 18px;
+    }
+
+    .readMore {
+      display: block;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+
+  .open {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    line-clamp: 4;
+    box-orient: vertical;
+  }
+}

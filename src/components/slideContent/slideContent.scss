@@ -35,15 +35,16 @@
 @media screen and (min-width: 768px) {
   .contentBlock {
     line-height: 23px;
-    padding: 4rem;
+    padding: 3rem 4rem 4rem;
     max-width: 535px;
     .contentHeader {
       font-size: 24px;
+      line-height: 30px;
       font-weight: bold;
       margin: 0 0 2rem 0;
     }
     .contentText {
-      font-size: 18px;
+      font-size: 17px;
       color: $baseGreen;
     }
     .learnMore {
