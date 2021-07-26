@@ -1,0 +1,28 @@
+@import "../../styles/variables";
+
+footer {
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: $lightGray;
+  margin-top: 10rem;
+  padding: 2vh 0;
+  border-top: 2px solid $baseGreen;
+  width: 100%;
+  box-shadow: 0 -25px 25px 0 rgba(0, 0, 0, 0.25);
+  color: $darkGray;
+  .headerLinks,
+  .orderButton {
+    display: block;
+  }
+  .headerLinks {
+    margin: 0;
+  }
+  .orderButton {
+    margin-bottom: 2.5vh;
+  }
+  .socialIcons {
+    margin: 2vh 0;
+  }
+}

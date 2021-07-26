@@ -1,0 +1,84 @@
+.slick-slider {
+  background-color: black;
+  box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 0.25);
+  height: 400px;
+}
+
+.slick-slider .slide {
+  position: relative;
+  background-image: url(https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+.slick-slider .slide .slide-shadow {
+  backdrop-filter: blur(3px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-bottom: 2px solid #6c8367;
+}
+
+.slick-slider .slick-dots {
+  bottom: 10px;
+}
+
+.slick-slider .slick-dots li {
+  margin: 0 0.5rem;
+}
+
+.slick-slider .slick-dots li button::before {
+  opacity: 1;
+  color: #5e5e5e;
+  font-size: 12px;
+}
+
+.slick-slider .slick-dots .slick-active button::before {
+  text-shadow: 0px 0px 4px white;
+  opacity: 1;
+  color: #6c8367;
+}
+
+@media screen and (min-width: 576px) {
+  .slick-slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    filter: drop-shadow(0 0 2px white);
+    width: 1.5rem;
+    height: 4.5rem;
+  }
+  .slick-slider .slick-next {
+    right: 3vw;
+  }
+  .slick-slider .slick-prev {
+    z-index: 1;
+    left: 3vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .slick-slider {
+    height: 650px;
+  }
+  .slick-slider .slide {
+    height: 650px;
+  }
+  .slick-slider .slide img {
+    height: 650px;
+  }
+  .slick-slider .slick-dot {
+    bottom: 40px;
+  }
+  .slick-slider .slick-arrow {
+    width: 2rem;
+    height: 6rem;
+  }
+}

@@ -1,0 +1,63 @@
+.explain {
+  text-align: justify;
+  max-width: 1280px;
+  padding: 1rem 1rem;
+  width: 95%;
+  margin: 0 auto;
+  margin: 3rem 0;
+  color: #464646;
+  border-top: 3px solid #6c8367;
+  border-bottom: 3px solid #6c8367;
+}
+
+.explain h3,
+.explain p {
+  display: inline;
+}
+
+.explain h3 {
+  display: inline;
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.explain p {
+  line-height: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+.explain .readMore {
+  color: #6c8367;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+}
+
+.close {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  box-orient: vertical;
+}
+
+@media screen and (min-width: 768px) {
+  .explain {
+    margin: 5rem 0;
+    padding: 1rem 0;
+  }
+  .explain h3 {
+    display: inline;
+    font-family: "Merriweather Sans", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .explain p {
+    line-height: 23px;
+    font-size: 18px;
+  }
+}

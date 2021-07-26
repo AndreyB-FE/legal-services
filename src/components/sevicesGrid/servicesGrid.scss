@@ -1,0 +1,98 @@
+@import "../../styles/variables";
+
+.servicesGrid {
+  display: grid;
+  align-items: center;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1080px;
+  margin: 0 1rem;
+  .service {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+    max-width: 250px;
+    min-height: 320px;
+    max-height: 400px;
+    color: $darkGray;
+    background-color: #efefef;
+    h3 {
+      font-weight: bold;
+      font-size: 20px;
+      text-align: center;
+    }
+    .hr {
+      height: 3px;
+      width: 50%;
+      background-color: $baseGreen;
+    }
+    p {
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (min-width: 556px) {
+  .servicesGrid {
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .servicesGrid {
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 85%;
+    row-gap: 4rem;
+    gap: 3rem;
+    margin: 0;
+    .service {
+      height: 370px;
+      max-width: 320px;
+      padding: 1.5rem;
+      justify-content: center;
+      .icon {
+        margin-bottom: 1rem;
+      }
+      .hr {
+        margin: 2rem 0;
+      }
+      p {
+        margin: 0 1rem 0 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .servicesGrid {
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    width: 85%;
+    row-gap: 4rem;
+    gap: 4rem;
+    margin: 0;
+    .service {
+      max-width: 320px;
+      height: 400px;
+      padding: 2rem;
+      .icon {
+        margin: 2rem 0;
+      }
+      .hr {
+        margin: 2rem 0;
+      }
+      p {
+        text-align: center;
+        margin: 0 2rem 2rem 2rem;
+      }
+    }
+  }
+}

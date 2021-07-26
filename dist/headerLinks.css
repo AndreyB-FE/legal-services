@@ -35,7 +35,6 @@
 @media screen and (max-width: 768px) {
   .headerLinks {
     display: none;
-    margin-bottom: 2vh;
   }
   .headerLinks ul {
     flex-direction: column;

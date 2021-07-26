@@ -9,11 +9,12 @@
   margin-right: 2vw;
 }
 
-.socialIcons .icon svg path {
-  stroke: #464646;
-  stroke-width: 1px;
+.socialIcons .icon:last-of-type {
+  margin: 0 0 0 1.5vw;
 }
 
-.socialIcons .icon:last-of-type {
-  margin: 0 0 0 1vw;
+@media screen and (min-width: 768px) {
+  .socialIcons .icon:last-of-type {
+    margin-left: 0.75vw;
+  }
 }

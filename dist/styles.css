@@ -6,6 +6,12 @@
 
 button {
   border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 0.6;
 }
 
 a {
@@ -17,4 +23,22 @@ a {
 
 body {
   font-family: sans-serif;
+  min-height: 100vh;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.coloredText {
+  color: #6c8367;
+}
+
+svg path {
+  stroke: #464646;
+  stroke-width: 1px;
 }

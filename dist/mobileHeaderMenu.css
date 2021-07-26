@@ -9,16 +9,17 @@
   padding: 3vh 0;
   background-color: #d6d6d6;
   border-bottom: 2px solid #6c8367;
-  transition: 0.3s;
-  z-index: -1;
+  z-index: 3;
+  transition: 0.3s ease-out;
+}
+
+.dropDown .headerLinks,
+.dropDown .orderButton {
+  display: block;
 }
 
 .dropDown .headerLinks {
-  display: block;
-}
-
-.dropDown .orderButton {
-  display: block;
+  margin-bottom: 2vh;
 }
 
 .hideMenu {

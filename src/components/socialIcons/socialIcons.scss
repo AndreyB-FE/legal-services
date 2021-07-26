@@ -7,14 +7,18 @@
   margin-top: 3vh;
   .icon {
     margin-right: 2vw;
-    svg {
-      path {
-        stroke: $darkGray;
-        stroke-width: 1px;
-      }
-    }
     &:last-of-type {
-      margin: 0 0 0 1vw;
+      margin: 0 0 0 1.5vw;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .socialIcons {
+    .icon {
+      &:last-of-type {
+        margin-left: 0.75vw;
+      }
     }
   }
 }
