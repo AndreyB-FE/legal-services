@@ -2,31 +2,23 @@ import React, { useState, useEffect, useRef } from "react";
 import "./explainArticle.scss";
 
 const ExplainArticle = (props) => {
-  const [open, setOpen] = useState(false);
-  const [par, setPar] = useState(false);
+  const [isOpened, setIsOpened] = useState(false); // is paragraph opened?
+  const [ifSmall, setIfSmall] = useState(false); // is block small enougth?
   const ref = useRef();
 
-  const handleResize = (e) => {
-    // if (ref.current.offsetHeight / 18 > 6) {
-    //   setOpen(true);
-    // } else {
-    //   setOpen(false);
-    // }
+  const handleResize = () => {
     if (ref.current.offsetWidth < 430) {
-      setOpen(false);
-      setPar(true);
+      setIsOpened(false);
+      setIfSmall(true);
     } else {
-      setOpen(true);
-      setPar(false);
+      setIsOpened(true);
+      setIfSmall(false);
     }
   };
 
   useEffect(() => {
-    // if (ref.current.offsetHeight / 18 > 6) {
-    //   setOpen(true);
-    // }
     if (ref.current.offsetWidth < 430) {
-      setPar(true);
+      setIfSmall(true);
     }
     window.addEventListener("resize", handleResize);
 
@@ -34,21 +26,18 @@ const ExplainArticle = (props) => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
   return (
     <article className="explain">
-      <span ref={ref} className={`${open ? "" : "open"}`}>
-        <h3>Предоставление Юридической помощи </h3>
-        <p>
-          в Lorem Ipsum passages, and more recently with desktop publishing
-          software like Aldus PageMaker including versions of Lorem Ipsum.Lorem
-          Ipsum passages, and more recently with desktop publishing software
-          like Aldus PageMaker including versions of Lorem Ipsum.
-        </p>
+      <span ref={ref} className={`${isOpened ? "" : "close"}`}>
+        {/*collect whole paragraph and header to count every line*/}
+        <h3>{props.headerText}</h3>
+        <p>{props.paragraphText}</p>
       </span>
-      {par && (
-        <div onClick={() => setOpen(!open)} className="readMore">
-          {!open && "читать еще..."}
-          {open && "скрыть"}
+      {ifSmall && (
+        <div onClick={() => setIsOpened(!isOpened)} className="readMore">
+          {!isOpened && "читать еще..."}
+          {isOpened && "скрыть"}
         </div>
       )}
     </article>

@@ -9,11 +9,6 @@
   margin-right: 2vw;
 }
 
-.socialIcons .icon svg path {
-  stroke: #464646;
-  stroke-width: 1px;
-}
-
 .socialIcons .icon:last-of-type {
   margin: 0 0 0 1.5vw;
 }

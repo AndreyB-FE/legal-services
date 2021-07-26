@@ -7,12 +7,6 @@
   margin-top: 3vh;
   .icon {
     margin-right: 2vw;
-    svg {
-      path {
-        stroke: $darkGray;
-        stroke-width: 1px;
-      }
-    }
     &:last-of-type {
       margin: 0 0 0 1.5vw;
     }

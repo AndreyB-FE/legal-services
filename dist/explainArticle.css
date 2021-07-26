@@ -1,12 +1,11 @@
 .explain {
-  color: #464646;
   text-align: justify;
   max-width: 1280px;
   padding: 1rem 1rem;
   width: 95%;
   margin: 0 auto;
-  margin-top: 5rem;
-  border: 3px 0 3px 0 solid #6c8367;
+  margin: 3rem 0;
+  color: #464646;
   border-top: 3px solid #6c8367;
   border-bottom: 3px solid #6c8367;
 }
@@ -36,7 +35,7 @@
   cursor: pointer;
 }
 
-.open {
+.close {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -moz-box;
@@ -48,17 +47,8 @@
 
 @media screen and (min-width: 768px) {
   .explain {
+    margin: 5rem 0;
     padding: 1rem 0;
-    width: 95%;
-    margin: 0 auto;
-    margin-top: 5rem;
-    border: 3px 0 3px 0 solid #6c8367;
-    border-top: 3px solid #6c8367;
-    border-bottom: 3px solid #6c8367;
-  }
-  .explain h3,
-  .explain p {
-    display: inline;
   }
   .explain h3 {
     display: inline;
@@ -68,21 +58,6 @@
   }
   .explain p {
     line-height: 23px;
-    font-family: "Montserrat", sans-serif;
     font-size: 18px;
-  }
-  .explain .readMore {
-    display: block;
-    text-align: center;
-    cursor: pointer;
-  }
-  .open {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -moz-box;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    line-clamp: 4;
-    box-orient: vertical;
   }
 }

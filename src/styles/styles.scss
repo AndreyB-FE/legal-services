@@ -36,3 +36,10 @@ body {
 .coloredText {
   color: $baseGreen;
 }
+
+svg {
+  path {
+    stroke: $darkGray;
+    stroke-width: 1px;
+  }
+}

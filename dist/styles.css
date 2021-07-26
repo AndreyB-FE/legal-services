@@ -37,3 +37,8 @@ body {
 .coloredText {
   color: #6c8367;
 }
+
+svg path {
+  stroke: #464646;
+  stroke-width: 1px;
+}
