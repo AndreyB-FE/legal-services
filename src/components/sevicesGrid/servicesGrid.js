@@ -1,7 +1,7 @@
 import React from "react";
 import "./servicesGrid.scss";
 
-const ServicesGrid = () => {
+const ServicesGrid = (props) => {
   const services = [
     {
       icon: (
@@ -257,7 +257,7 @@ const ServicesGrid = () => {
     },
   ];
   return (
-    <div className="servicesGrid">
+    <div className={`servicesGrid ${props.isOpen ? "open" : ""}`}>
       {services.map((service, id) => {
         return (
           <div key={id} className="service">

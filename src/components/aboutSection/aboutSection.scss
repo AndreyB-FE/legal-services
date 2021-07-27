@@ -1,0 +1,111 @@
+@import "../../styles/variables";
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .advantages {
+    max-width: 1080px;
+    max-width: 575px;
+    width: 95%;
+    h3 {
+      color: $baseGreen;
+      font-size: 28px;
+      text-align: center;
+    }
+    .advantagesInfo {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+
+      padding: 2rem 0;
+      .list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 3rem 0;
+        width: 100%;
+        .listItem {
+          display: flex;
+          align-items: flex-start;
+          margin-bottom: 1rem;
+          span {
+            margin-left: 0.5rem;
+            padding-top: 2px;
+          }
+          h2,
+          p {
+            display: inline;
+          }
+          .icon {
+            width: 20px;
+            svg {
+              width: 20px;
+            }
+          }
+          h2 {
+            font-size: 18px;
+          }
+          p {
+            line-height: 20px;
+            font-size: 16px;
+          }
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+        }
+      }
+      .photo {
+        width: 250px;
+        height: 350px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    .advantages {
+      width: 85%;
+      max-width: 1080px;
+      h3 {
+        font-size: 30px;
+      }
+      .advantagesInfo {
+        flex-direction: row;
+        .list {
+          padding-right: 0;
+          width: 70%;
+          max-width: 700px;
+          .listItem {
+            span {
+              margin-left: 1rem;
+            }
+            .icon {
+              width: 24px;
+              svg {
+                width: 24px;
+              }
+            }
+            h2 {
+              font-size: 22px;
+            }
+            p {
+              line-height: 22px;
+              font-size: 18px;
+            }
+          }
+        }
+        .photo {
+          width: 300px;
+          height: 400px;
+          margin: 0;
+        }
+      }
+    }
+  }
+}

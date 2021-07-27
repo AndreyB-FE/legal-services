@@ -49,7 +49,7 @@ const SliderSection = () => {
   const slides = [
     {
       style: {
-        backgroundImage: 'url("./assets/legal.jpg")',
+        backgroundImage: "url(./assets/photo.jpeg)",
       },
       // warning!!! shit code
       contentText: {
@@ -64,7 +64,7 @@ const SliderSection = () => {
     },
     {
       style: {
-        backgroundImage: 'url("./assets/legal.jpg")',
+        backgroundImage: "url(./assets/photo.jpeg)",
       },
       contentText: {
         headerText: [
@@ -78,7 +78,7 @@ const SliderSection = () => {
     },
     {
       style: {
-        backgroundImage: 'url("./assets/legal.jpg")',
+        backgroundImage: "url(./assets/photo.jpeg)",
       },
       contentText: {
         headerText: [
@@ -114,7 +114,7 @@ const SliderSection = () => {
     <Slider {...settings}>
       {slides.map((slide, id) => {
         return (
-          <div key={id} className="slide" style={slide.style}>
+          <div key={id} className="slide">
             <div className="slide-shadow">
               <SlideContent {...slide.contentText}></SlideContent>
             </div>

@@ -4,3 +4,10 @@
   align-items: center;
   flex-direction: column;
 }
+
+.services button {
+  font-size: 18px;
+  color: #6c8367;
+  background-color: transparent;
+  margin-top: 1rem;
+}

@@ -1,0 +1,117 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about .advantages {
+  max-width: 1080px;
+  max-width: 575px;
+  width: 95%;
+}
+
+.about .advantages h3 {
+  color: #6c8367;
+  font-size: 28px;
+  text-align: center;
+}
+
+.about .advantages .advantagesInfo {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+
+.about .advantages .advantagesInfo .list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 3rem 0;
+  width: 100%;
+}
+
+.about .advantages .advantagesInfo .list .listItem {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.about .advantages .advantagesInfo .list .listItem span {
+  margin-left: 0.5rem;
+  padding-top: 2px;
+}
+
+.about .advantages .advantagesInfo .list .listItem h2,
+.about .advantages .advantagesInfo .list .listItem p {
+  display: inline;
+}
+
+.about .advantages .advantagesInfo .list .listItem .icon {
+  width: 20px;
+}
+
+.about .advantages .advantagesInfo .list .listItem .icon svg {
+  width: 20px;
+}
+
+.about .advantages .advantagesInfo .list .listItem h2 {
+  font-size: 18px;
+}
+
+.about .advantages .advantagesInfo .list .listItem p {
+  line-height: 20px;
+  font-size: 16px;
+}
+
+.about .advantages .advantagesInfo .list .listItem:last-of-type {
+  margin-bottom: 0;
+}
+
+.about .advantages .advantagesInfo .photo {
+  width: 250px;
+  height: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .about .advantages {
+    width: 85%;
+    max-width: 1080px;
+  }
+  .about .advantages h3 {
+    font-size: 30px;
+  }
+  .about .advantages .advantagesInfo {
+    flex-direction: row;
+  }
+  .about .advantages .advantagesInfo .list {
+    padding-right: 0;
+    width: 70%;
+    max-width: 700px;
+  }
+  .about .advantages .advantagesInfo .list .listItem span {
+    margin-left: 1rem;
+  }
+  .about .advantages .advantagesInfo .list .listItem .icon {
+    width: 24px;
+  }
+  .about .advantages .advantagesInfo .list .listItem .icon svg {
+    width: 24px;
+  }
+  .about .advantages .advantagesInfo .list .listItem h2 {
+    font-size: 22px;
+  }
+  .about .advantages .advantagesInfo .list .listItem p {
+    line-height: 22px;
+    font-size: 18px;
+  }
+  .about .advantages .advantagesInfo .photo {
+    width: 300px;
+    height: 400px;
+    margin: 0;
+  }
+}

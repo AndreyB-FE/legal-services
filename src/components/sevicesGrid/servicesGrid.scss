@@ -40,10 +40,6 @@
   }
 }
 
-.open {
-  height: auto;
-}
-
 @media screen and (min-width: 556px) {
   .servicesGrid {
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -104,4 +100,8 @@
       }
     }
   }
+}
+
+.open {
+  height: auto;
 }

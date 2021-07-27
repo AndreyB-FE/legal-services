@@ -1,5 +1,6 @@
 @use "./reset.scss";
 @import "./variables.scss";
+@import "./fonts.scss";
 
 * {
   box-sizing: border-box;
@@ -42,4 +43,17 @@ svg {
     stroke: $darkGray;
     stroke-width: 1px;
   }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Merriweather;
+}
+
+p {
+  font-family: Montserrat;
 }
