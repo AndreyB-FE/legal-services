@@ -64,7 +64,7 @@ const AboutSection = () => {
           </ul>
           <div
             className="photo"
-            style={{ backgroundImage: "url(./assets/photo.jpeg)" }}
+            style={{ backgroundImage: "url(./assets/photo.jpg)" }}
           ></div>
         </div>
       </div>
