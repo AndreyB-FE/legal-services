@@ -4,7 +4,7 @@ const socialIcons = () => {
   return (
     <div className="socialIcons">
       <div className="icon">
-        <a href="/">
+        <a href="https://facebook.com/ ">
           <svg
             width="32"
             height="32"
@@ -43,7 +43,7 @@ const socialIcons = () => {
         </a>
       </div>
       <div className="icon">
-        <a href="/">
+        <a href="https://vk.com/">
           <svg
             width="40"
             height="24"

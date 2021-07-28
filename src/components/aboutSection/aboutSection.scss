@@ -8,6 +8,7 @@
     max-width: 1080px;
     max-width: 575px;
     width: 95%;
+    padding: 0 1rem;
     h3 {
       color: $baseGreen;
       font-size: 28px;
@@ -56,7 +57,8 @@
         }
       }
       .photo {
-        width: 250px;
+        width: 100%;
+        max-width: 260px;
         height: 350px;
         background-position: center;
         background-repeat: no-repeat;
@@ -101,6 +103,7 @@
           }
         }
         .photo {
+          max-width: none;
           width: 300px;
           height: 400px;
           margin: 0;

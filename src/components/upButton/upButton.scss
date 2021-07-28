@@ -1,0 +1,27 @@
+@import "../../styles/variables";
+
+.upButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 10vh;
+  right: 10vw;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: $halfGreen;
+  padding-bottom: 5px;
+  color: white;
+}
+.invisible {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .upButton {
+    right: 10vw;
+    width: 65px;
+    height: 65px;
+  }
+}

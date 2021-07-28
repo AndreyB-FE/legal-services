@@ -12,7 +12,9 @@ const Services = () => {
 
   const [isOpen, setIsOpen] = useState(false);
   const myRef = useRef(null);
-  const executeScroll = () => myRef.current.scrollIntoView();
+  const executeScroll = () => {
+    myRef.current.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <section className="services" ref={myRef}>
@@ -23,6 +25,7 @@ const Services = () => {
           setIsOpen(!isOpen);
           isOpen && executeScroll();
         }}
+        title="Просмотреть все услуги"
       >
         {(!isOpen && "Посмотреть всё") || "Скрыть"}
       </button>

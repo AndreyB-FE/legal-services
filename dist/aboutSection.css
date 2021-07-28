@@ -8,6 +8,7 @@
   max-width: 1080px;
   max-width: 575px;
   width: 95%;
+  padding: 0 1rem;
 }
 
 .about .advantages h3 {
@@ -69,7 +70,8 @@
 }
 
 .about .advantages .advantagesInfo .photo {
-  width: 250px;
+  width: 100%;
+  max-width: 260px;
   height: 350px;
   background-position: center;
   background-repeat: no-repeat;
@@ -110,6 +112,7 @@
     font-size: 18px;
   }
   .about .advantages .advantagesInfo .photo {
+    max-width: none;
     width: 300px;
     height: 400px;
     margin: 0;

@@ -4,6 +4,7 @@ import SliderSection from "../../components/sliderSection/sliderSection";
 import ServicesSection from "../../components/servicesSection/servicesSection";
 import AboutSection from "../../components/aboutSection/aboutSection";
 import FindSection from "../../components/findSection/findSection";
+import UpButton from "../../components/upButton/upButton";
 import Footer from "../../components/footer/footer";
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
       <ServicesSection></ServicesSection>
       <AboutSection></AboutSection>
       <FindSection></FindSection>
+      <UpButton></UpButton>
       <Footer></Footer>
     </div>
   );
