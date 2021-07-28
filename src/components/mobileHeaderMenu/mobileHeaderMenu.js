@@ -6,10 +6,17 @@ import SocialIcons from "../socialIcons/socialIcons";
 
 const MobileHeaderMenu = (props) => {
   return (
-    <div className={`dropDown${props.isOpen ? "" : " hideMenu"}`}>
-      <HeaderLinks></HeaderLinks>
-      <OrderButton></OrderButton>
-      <SocialIcons></SocialIcons>
+    <div
+      className={`dropDown${props.isOpen ? "" : " hideMenu"}`}
+      onClick={() => {
+        props.clickHandler();
+      }}
+    >
+      <div className="dropDownInfo" onClick={(e) => e.stopPropagation()}>
+        <HeaderLinks></HeaderLinks>
+        <OrderButton></OrderButton>
+        <SocialIcons></SocialIcons>
+      </div>
     </div>
   );
 };

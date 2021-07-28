@@ -5,4 +5,10 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  button {
+    font-size: 18px;
+    color: $baseGreen;
+    background-color: transparent;
+    margin-top: 1rem;
+  }
 }

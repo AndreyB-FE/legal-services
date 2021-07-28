@@ -7,24 +7,24 @@
 
   .slide {
     position: relative;
-    background-image: url(https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    // background-image: url(https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg);
 
     height: 400px;
-    .slide-shadow {
+    .slideBackground {
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .slideShadow {
       backdrop-filter: blur(3px);
       display: flex;
       justify-content: center;
       align-items: center;
-      position: absolute;
-      top: 0;
-      left: 0;
+      background-color: $halfWhite;
       width: 100%;
       height: 100%;
-      background-color: $halfWhite;
-      border-bottom: 2px solid $baseGreen;
     }
   }
 

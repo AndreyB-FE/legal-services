@@ -1,0 +1,71 @@
+@import "../../styles/variables";
+
+.howToFind {
+  max-width: 1280px;
+  padding: 1rem 1rem;
+  width: 95%;
+  margin: 0 auto;
+  color: $darkGray;
+  h3 {
+    text-align: center;
+    font-size: 28px;
+    color: $baseGreen;
+    margin: 2rem 0;
+  }
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    border-top: 3px solid $baseGreen;
+    border-bottom: 3px solid $baseGreen;
+    .address {
+      order: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin-bottom: 2rem;
+      height: 200px;
+    }
+    iframe {
+      order: 1;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .howToFind {
+    max-width: 1280px;
+    padding: 1rem 1rem;
+    width: 95%;
+    margin: 0 auto;
+    color: $darkGray;
+    h3 {
+      text-align: center;
+      font-size: 28px;
+      color: $baseGreen;
+      margin: 2rem 0 4rem;
+    }
+    .contacts {
+      display: flex;
+      flex-direction: row;
+      padding: 1rem 0;
+      border-top: 3px solid $baseGreen;
+      border-bottom: 3px solid $baseGreen;
+      .address {
+        order: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+        height: 200px;
+      }
+      iframe {
+        order: 0;
+        width: 50%;
+        min-width: 400px;
+      }
+    }
+  }
+}

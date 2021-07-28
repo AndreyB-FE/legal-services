@@ -35,10 +35,9 @@ const ExplainArticle = (props) => {
         <p>{props.paragraphText}</p>
       </span>
       {ifSmall && (
-        <div onClick={() => setIsOpened(!isOpened)} className="readMore">
-          {!isOpened && "читать еще..."}
-          {isOpened && "скрыть"}
-        </div>
+        <button onClick={() => setIsOpened(!isOpened)} className="readMore">
+          {(!isOpened && "читать еще...") || "скрыть"}
+        </button>
       )}
     </article>
   );

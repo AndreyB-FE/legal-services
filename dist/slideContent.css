@@ -11,14 +11,12 @@
 }
 
 .contentBlock .contentHeader {
-  font-family: "Merriweather Sans", sans-serif;
-  font-size: 21px;
+  font-size: 20px;
   font-weight: bold;
   margin-bottom: 1rem;
 }
 
 .contentBlock .contentText {
-  font-family: "Montserrat", sans-serif;
   color: #6c8367;
   font-size: 16px;
   text-align: justify;

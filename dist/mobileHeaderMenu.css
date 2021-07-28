@@ -2,14 +2,11 @@
   position: absolute;
   top: 3.5rem;
   left: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 100%;
-  padding: 3vh 0;
-  background-color: #d6d6d6;
-  border-bottom: 2px solid #6c8367;
-  z-index: 3;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.75);
+  height: 100vh;
+  opacity: 1;
   transition: 0.3s ease-out;
 }
 
@@ -22,7 +19,19 @@
   margin-bottom: 2vh;
 }
 
+.dropDown .dropDownInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  background-color: #d6d6d6;
+  width: 100%;
+  padding: 3vh 0;
+  border-bottom: 2px solid #6c8367;
+}
+
 .hideMenu {
+  opacity: 0;
   left: -100%;
 }
 
