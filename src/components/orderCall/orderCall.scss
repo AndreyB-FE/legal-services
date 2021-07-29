@@ -1,6 +1,7 @@
 @import "../../styles/variables";
 
 .formWrap {
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -130,6 +131,29 @@
       margin: 0 auto;
     }
   }
+  .farewell {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 535px;
+    max-height: 600px;
+    height: 200px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: $lightGray;
+    color: $baseGreen;
+    text-align: center;
+    border-radius: 5px;
+  }
+}
+
+.openOrder {
+  display: block;
 }
 
 @media screen and (max-height: 500px) and (orientation: landscape) {
