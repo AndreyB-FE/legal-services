@@ -28,7 +28,6 @@ body {
   min-height: 100vh;
 }
 .container {
-  position: relative;
   width: 100%;
   min-height: 100vh;
   margin: 0 auto;
@@ -54,6 +53,18 @@ h6 {
   font-family: Merriweather;
 }
 
-p {
+p,
+input,
+textarea {
   font-family: Montserrat;
+}
+
+input,
+textarea {
+  outline: none;
+  border: none;
+}
+
+textarea {
+  resize: none;
 }

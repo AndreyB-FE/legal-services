@@ -13,7 +13,6 @@ const UpButton = (props) => {
   };
 
   const handleScroll = () => {
-    console.log(window.pageYOffset);
     if (window.pageYOffset > 2000) {
       setIsVisible(true);
       return;

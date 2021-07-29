@@ -1,0 +1,196 @@
+.formWrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.74);
+  z-index: 2;
+}
+
+.formWrap #callback {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 535px;
+  max-height: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #d6d6d6;
+  color: #464646;
+}
+
+.formWrap #callback .crossButton {
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  top: 1rem;
+  right: 1rem;
+  background-color: transparent;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.formWrap #callback .crossButton span {
+  top: 8px;
+  left: 2px;
+  position: absolute;
+  width: 15px;
+  height: 3px;
+  background-color: #6c8367;
+  border-radius: 5px;
+  padding: 0;
+}
+
+.formWrap #callback .crossButton span:first-of-type {
+  transform: rotateZ(45deg);
+}
+
+.formWrap #callback .crossButton span:last-of-type {
+  transform: rotateZ(-45deg);
+}
+
+.formWrap #callback .crossButton:hover {
+  opacity: 1;
+  background-color: #5e5e5e;
+}
+
+.formWrap #callback h2 {
+  font-size: 22px;
+  margin: 2rem 0 1rem;
+}
+
+.formWrap #callback .input {
+  height: 2rem;
+  border-radius: 5px;
+  padding: 0 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.formWrap #callback .radioButtons {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.formWrap #callback .radioButtons .radioLabel {
+  display: block;
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 0.75rem;
+  cursor: pointer;
+  font-size: 16px;
+  user-select: none;
+}
+
+.formWrap #callback .radioButtons .radioLabel:first-child {
+  margin-bottom: 0.5rem;
+}
+
+.formWrap #callback .radioButtons .radioLabel .contactOption {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.formWrap #callback .radioButtons .radioLabel .contactOption:checked ~ .checkmark {
+  background-color: #6c8367;
+}
+
+.formWrap #callback .radioButtons .radioLabel .contactOption:checked ~ .checkmark:after {
+  display: block;
+}
+
+.formWrap #callback .radioButtons .radioLabel .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1rem;
+  width: 1rem;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.formWrap #callback .radioButtons .radioLabel .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+.formWrap #callback textarea {
+  height: 130px;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  padding: 0.5rem 0.5rem;
+}
+
+.formWrap #callback .submitOrder {
+  height: 2rem;
+  width: 150px;
+  background-color: #6c8367;
+  color: white;
+  margin: 0 auto;
+}
+
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  .formWrap #callback {
+    width: 70%;
+    height: 90vh;
+  }
+  .formWrap #callback h2 {
+    font-size: 22px;
+    margin: 0 0 0.5rem;
+  }
+  .formWrap #callback textarea {
+    height: 130px;
+    margin-bottom: 0.5rem;
+  }
+  .formWrap #callback .radioButtons {
+    margin-bottom: 0;
+  }
+  .formWrap #callback .input {
+    margin-bottom: 0.75rem;
+  }
+}
+
+@media screen and (max-device-height: 300px) {
+  .formWrap #callback {
+    width: 60%;
+    height: 90vh;
+  }
+  .formWrap #callback h2 {
+    font-size: 20px;
+    margin: 0 0 0.5rem;
+  }
+  .formWrap #callback textarea {
+    height: 80px;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .formWrap #callback {
+    height: auto;
+  }
+  .formWrap #callback .radioButtons {
+    flex-direction: row;
+  }
+  .formWrap #callback .radioButtons .radioLabel {
+    padding-left: 1.5rem;
+  }
+  .formWrap #callback .radioButtons .radioLabel:first-of-type {
+    margin-right: 2rem;
+  }
+}

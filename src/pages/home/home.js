@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../../components/header/header";
+import OrderCall from "../../components/orderCall/orderCall";
 import SliderSection from "../../components/sliderSection/sliderSection";
 import ServicesSection from "../../components/servicesSection/servicesSection";
 import AboutSection from "../../components/aboutSection/aboutSection";
@@ -11,6 +12,7 @@ const Home = () => {
   return (
     <div className="container">
       <Header></Header>
+      <OrderCall></OrderCall>
       <SliderSection></SliderSection>
       <ServicesSection></ServicesSection>
       <AboutSection></AboutSection>
