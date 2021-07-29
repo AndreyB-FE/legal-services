@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { toggleOrderWindow } from "../../actions";
 import "./orderCall.scss";
@@ -6,7 +6,6 @@ import "./orderCall.scss";
 const OrderCall = () => {
   const dispatch = useDispatch();
   const windowState = useSelector((state) => state.orderCallReducer);
-  console.log(windowState);
   const [contactOption, setContactOption] = useState("phoneOption");
   const [isSubmited, setIsSubmited] = useState(false);
   const [formValues, setFormValues] = useState({
@@ -14,6 +13,14 @@ const OrderCall = () => {
     phone: null,
     email: null,
     comment: null,
+  });
+
+  useEffect(() => {
+    if (windowState) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
   });
 
   const radioClickHandler = (event) => {

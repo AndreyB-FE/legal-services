@@ -3,3 +3,9 @@ export const toggleOrderWindow = () => {
     type: "TOGGLE_ORDER_WINDOW",
   };
 };
+
+export const toggleAsideWindow = () => {
+  return {
+    type: "TOGGLE_ASIDE_WINDOW",
+  };
+};

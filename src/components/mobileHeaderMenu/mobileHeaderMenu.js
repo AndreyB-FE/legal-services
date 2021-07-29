@@ -3,14 +3,17 @@ import "./mobileHeaderMenu.scss";
 import HeaderLinks from "../headerLinks/headerLinks";
 import OrderButton from "../orderButton/orderButton";
 import SocialIcons from "../socialIcons/socialIcons";
+import { useSelector, useDispatch } from "react-redux";
+import { toggleAsideWindow } from "../../actions";
 
-const MobileHeaderMenu = (props) => {
+const MobileHeaderMenu = () => {
+  const dispatch = useDispatch();
+  const windowState = useSelector((state) => state.asideWindowReducer);
+
   return (
     <div
-      className={`dropDown${props.isOpen ? "" : " hideMenu"}`}
-      onClick={() => {
-        props.clickHandler();
-      }}
+      className={`dropDown${windowState ? "" : " hideMenu"}`}
+      onClick={() => dispatch(toggleAsideWindow())}
     >
       <div className="dropDownInfo" onClick={(e) => e.stopPropagation()}>
         <HeaderLinks></HeaderLinks>
