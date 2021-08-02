@@ -1,0 +1,64 @@
+.mobileServices {
+  width: 100%;
+}
+
+.mobileServices .service {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: inherit;
+  padding: 0.5rem 1rem;
+  border-top: 1px solid #5e5e5e;
+  border-bottom: 1px solid #5e5e5e;
+  background-color: #eeeeee;
+  cursor: pointer;
+  margin-bottom: 0.25rem;
+  min-height: 85px;
+}
+
+.mobileServices .service:last-of-type {
+  margin-bottom: 0;
+}
+
+.mobileServices .service .serviceBody {
+  display: flex;
+  align-items: center;
+}
+
+.mobileServices .service .serviceBody .icon {
+  width: 2rem;
+  margin-right: 1rem;
+  text-align: center;
+}
+
+.mobileServices .service .serviceBody .icon svg {
+  height: 2rem;
+  width: 2rem;
+}
+
+.mobileServices .service .serviceBody .serviceText {
+  width: 60%;
+}
+
+.mobileServices .service .serviceBody .serviceText h2 {
+  font-size: 14px;
+}
+
+.mobileServices .service .serviceBody .serviceText p {
+  margin-top: 0.25rem;
+  font-size: 14px;
+  line-height: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  box-orient: vertical;
+}
+
+@media screen and (min-width: 768px) {
+  .mobileServices {
+    display: none;
+  }
+}

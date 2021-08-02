@@ -1,5 +1,5 @@
 .servicesGrid {
-  display: grid;
+  display: none;
   align-items: center;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr;
@@ -42,8 +42,9 @@
   text-align: center;
 }
 
-@media screen and (min-width: 556px) {
+@media screen and (min-width: 768px) {
   .servicesGrid {
+    display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
   }

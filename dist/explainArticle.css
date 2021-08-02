@@ -2,7 +2,6 @@
   text-align: justify;
   max-width: 1280px;
   padding: 1rem 1rem;
-  width: 95%;
   margin: 3rem 0;
   color: #464646;
   border-top: 3px solid #6c8367;
@@ -45,6 +44,7 @@
 
 @media screen and (min-width: 768px) {
   .explain {
+    width: 95%;
     margin: 5rem 0;
     padding: 1rem 0;
   }

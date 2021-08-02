@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import ExplainArticle from "../explainArticle/explainArticle";
+import MobileServices from "../mobileServices/mobileServices";
 import ServicesGrid from "../sevicesGrid/servicesGrid";
 import "./servicesSection.scss";
 
@@ -19,6 +20,7 @@ const Services = () => {
   return (
     <section className="services" ref={myRef}>
       <ExplainArticle {...articleText}></ExplainArticle>
+      <MobileServices></MobileServices>
       <ServicesGrid isOpen={isOpen}></ServicesGrid>
       <button
         onClick={() => {
